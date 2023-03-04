@@ -33,7 +33,17 @@ namespace GameTool_Calculator
         public void Write()
         {
             if (FilePath == null)
+            {
+                MessageBox.Show("保存名が設定されていません");
                 return;
+            }
+
+            // 拡張子が付いているか確認
+            // なければ付与
+            if(!FilePath.Contains(".json"))
+            {
+                FilePath += ".json";
+            }
 
             DataContractJsonSerializer serializer = new DataContractJsonSerializer(GetType());
 

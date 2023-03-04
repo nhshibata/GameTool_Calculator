@@ -28,88 +28,19 @@
     <!--  MainGrid  -->
     <Grid>
         <TabControl>
-            <TabItem Header="Rate" Style="{StaticResource TabBlack}">
-                <Grid>
-                    <!--  区切り  -->
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*" />
-                        <ColumnDefinition Width="2*" />
-                        <ColumnDefinition Width="0.5*" />
-                    </Grid.ColumnDefinitions>
-
-                    <!--  左  -->
-                    <Grid Grid.Column="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="4*" />
-                        </Grid.RowDefinitions>
-
-                        <!--  コントロール部  -->
-                        <Button
-                            Grid.Row="0"
-                            Grid.Column="0"
-                            Margin="1"
-                            Click="ClickNewRate"
-                            Content="New Data" />
-                        <ComboBox
-                            x:Name="RateComboBox"
-                            Grid.Row="0"
-                            Grid.Column="1"
-                            PreviewMouseLeftButtonUp="RateComboBox_PreviewMouseLeftButtonUp" />
-                        <Label
-                            Grid.Row="1"
-                            VerticalAlignment="Center"
-                            Content="Name" />
-                        <TextBox
-                            x:Name="RateNameBox"
-                            Grid.Row="1"
-                            Grid.Column="1"
-                            VerticalAlignment="Center"
-                            Text="{Binding RateName}" />
-                        <Label
-                            Grid.Row="2"
-                            VerticalAlignment="Center"
-                            Content="Rate" />
-                        <TextBox
-                            x:Name="RateValueBox"
-                            Grid.Row="2"
-                            Grid.Column="1"
-                            VerticalAlignment="Center"
-                            Text="{Binding RateValue}" />
-                        <Label
-                            Grid.Row="3"
-                            Grid.Column="0"
-                            VerticalAlignment="Center"
-                            Content="Price" />
-                        <TextBox
-                            x:Name="RatePriceBox"
-                            Grid.Row="3"
-                            Grid.Column="1"
-                            VerticalAlignment="Center"
-                            Text="{Binding RatePrice}" />
-                        <Button
-                            Grid.Row="4"
-                            Grid.Column="0"
-                            Grid.ColumnSpan="2"
-                            Margin="3"
-                            Click="RateWrite"
-                            Content="データ保存" />
-
-                    </Grid>
-                </Grid>
+            <!--  レート表示部  -->
+            <TabItem Header="Rate">
+                <!--  x:Nameはアクセス名  -->
+                <local:RateTab x:Name="_RateTab" />
             </TabItem>
 
-            <TabItem Header="Item" />
+            <TabItem Header="Item">
+                <local:ItemTab x:Name="_ItemTab" />
+            </TabItem>
+
             <TabItem Header="Player" />
             <TabItem Header="Enemy" />
+            <TabItem Header="Calc" Style="{StaticResource TabBlack}" />
         </TabControl>
 
     </Grid>

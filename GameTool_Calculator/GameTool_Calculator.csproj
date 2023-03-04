@@ -72,9 +72,23 @@
     <Compile Include="itemData.cs" />
     <Compile Include="PlayerData.cs" />
     <Compile Include="rateData.cs" />
+    <Compile Include="Views\ItemTab.xaml.cs">
+      <DependentUpon>ItemTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RateTab.xaml.cs">
+      <DependentUpon>RateTab.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\ItemTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\RateTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\StyleResource.xaml">
       <Generator>MSBuild:Compile</Generator>

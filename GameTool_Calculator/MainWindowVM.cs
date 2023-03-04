@@ -20,5 +20,8 @@ namespace GameTool_Calculator
         public float RateValue { get { return m_DB.SelectRateData.Rate; } set { m_DB.SelectRateData.Rate = value; } }
         public float RatePrice { get { return m_DB.SelectRateData.Price; } set { m_DB.SelectRateData.Price = value; } }
 
+        public string ItemName { get { return m_DB.SelectItemData.Name; } set { m_DB.SelectItemData.Name = value; } }
+        public int ItemMoney { get { return m_DB.SelectItemData.Money; } set { m_DB.SelectItemData.Money = value; } }
+
     }
 }
