@@ -131,3 +131,16 @@ $RECYCLE.BIN/
 .DS_Store
 
 _NCrunch*
+.vs/GameTool_Calculator/v15/.suo
+.vs/GameTool_Calculator/v15/Server/sqlite3/db.lock
+.vs/GameTool_Calculator/v15/Server/sqlite3/storage.ide
+.vs/GameTool_Calculator/v15/Server/sqlite3/storage.ide-shm
+.vs/GameTool_Calculator/v15/Server/sqlite3/storage.ide-wal
+packages/WindowsAPICodePack-Core.1.1.1/.signature.p7s
+packages/WindowsAPICodePack-Core.1.1.1/WindowsAPICodePack-Core.1.1.1.nupkg
+packages/WindowsAPICodePack-Core.1.1.1/lib/Microsoft.WindowsAPICodePack.dll
+packages/WindowsAPICodePack-Core.1.1.1/lib/Microsoft.WindowsAPICodePack.xml
+packages/WindowsAPICodePack-Shell.1.1.1/.signature.p7s
+packages/WindowsAPICodePack-Shell.1.1.1/WindowsAPICodePack-Shell.1.1.1.nupkg
+packages/WindowsAPICodePack-Shell.1.1.1/lib/Microsoft.WindowsAPICodePack.Shell.dll
+packages/WindowsAPICodePack-Shell.1.1.1/lib/Microsoft.WindowsAPICodePack.Shell.xml
