@@ -23,6 +23,27 @@ namespace GameTool_Calculator
         public MainWindow()
         {
             InitializeComponent();
+
+            //CDataBase.m_pInstance.Read();
         }
+
+        /// <summary>
+        /// 描画完了後呼び出し
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Window_ContentRendered(object sender, EventArgs e)
+        {
+         
+
+        }
+
+
+        ///=========================================================
+        /// 汎用関数
+        ///=========================================================
+
+        
+
     }
 }
