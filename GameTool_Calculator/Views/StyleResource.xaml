@@ -13,5 +13,10 @@
         <Setter Property="Foreground" Value="Red" />
     </Style>
 
+    <Style x:Key="TextColor" TargetType="TextBlock">
+        <Setter Property="Background" Value="Yellow" />
+        <Setter Property="Foreground" Value="Blue" />
+    </Style>
+
 
 </ResourceDictionary>
